@@ -135,6 +135,7 @@ footer {
 }
 
 header {
+    z-index: 1;
     background-color: var(--main-color);
     text-align: left;
     color:white;
