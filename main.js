@@ -6,7 +6,7 @@ const experiencia = {
 const cargos = [
     {
         titulo: "importar",
-        descripcion: "encargado de importar genero de asia",
+        descripcion: "encargado de importar género de asia",
     },
     {
         titulo: "venta al por mayor",
@@ -82,3 +82,13 @@ function pintarCargos() {
     }
 }
 pintarCargos();
+
+document.getElementById("imprimir").addEventListener("click", addNewTask);
+
+function addNewTask() {
+    let areYouSure = confirm("¿Quieres imprimir?");
+
+    if (areYouSure) {
+        window.print();
+    }
+}

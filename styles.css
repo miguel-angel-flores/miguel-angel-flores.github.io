@@ -1,3 +1,21 @@
+@media (max-width: 480px) {
+    html {
+        height: 100%;
+    }
+    h1 {
+       font-size: 1.5em; 
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0 0 0.5em 0;
+    }
+    
+    main {
+        width: 90%;
+    }
+}
+
 :root {
     --main-color:#47c2c8;
     --text-color:#4c4c4c;
@@ -17,6 +35,7 @@ body {
     max-width: 70%;
     margin: 0 auto;
 }
+
 h1 {
    color: var(--main-color);
    font-size: 3rem;
@@ -132,6 +151,40 @@ header {
     font-size: 1.5rem;
     margin-left: 1rem;
 }
+
+button {
+    width: 25%;
+    cursor: pointer;
+    border-radius: 1.5em;
+    background-color: var(--main-color);
+  }
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+    header, footer, button {
+        display: none;
+    }
+    body {
+        font-size: small;
+    }
+    h1, h2, h3, h4, p, li {
+        line-height: 1em;
+    }
+    .cv {
+        columns: 2;
+        column-gap: 50px;
+        padding: 48px;
+        margin: 0 auto;
+    }
+ }
 
 
 
